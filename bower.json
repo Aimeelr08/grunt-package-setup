@@ -1,0 +1,18 @@
+{
+  "name": "bower-example",
+  "description": "Example Bower project loading jQuery",
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": [
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

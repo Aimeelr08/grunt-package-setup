@@ -1,0 +1,26 @@
+{
+	"name": "bower-with-grunt",
+	"version": "0.1.0",
+	"description": "A demo of Bower using Grunt",
+	"main": "server.js",
+	"scripts": {
+    "install": "bower install",
+		"start": "grunt wiredep && node server.js"
+	},
+	"dependencies": {
+    "express": "^4.12.4",
+    "bower": "*",
+    "grunt": "*",
+    "grunt-wiredep": "*"
+	},
+	"engines": {
+		"node": "4.4.5"
+	},
+	"keywords": [
+		"node",
+    "bower",
+    "grunt",
+		"express"
+	],
+	"license": "MIT"
+}

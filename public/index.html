@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bower with Grunt Example</title>
+    <meta name="description" content="Bower with Grunt on Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->    
+    
+  </head>
+  <body>
+    <h1>jQuery loaded via Bower</h1>
+    <div>Outcome:</div>
+    <div id="result" style="font-weight: bold"></div>
+    <script>
+    window.onload = function() {
+      // Check if jQuery is loaded
+      if(window.jQuery) {  
+        // jQuery is loaded  
+        window.jQuery('#result').text("jQuery loaded ok");
+      } else {
+        // jQuery is not loaded
+        document.getElementById('result').innerText="jQuery not loaded";
+      }
+    }
+    </script>
+    <script src="https://button.glitch.me/button.js" data-style="glitch"></script>
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+  </body>
+</html>
